@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: npm install --frozen-lockfile
       - name: Build website
-        run: npm build
+        run: npm run build
 
       # 部署到 GitHub Pages 的热门选择：
       # 文档：https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
