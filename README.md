@@ -1,6 +1,5 @@
 Dual-Caption-Blog
 
-
 <!-- npm run swizzle @docusaurus/theme-classic Icon/Language -- --eject --danger
 npm run swizzle @docusaurus/theme-classic NavbarItem/DropdownNavbarItem -- --eject --danger
 npm run swizzle @docusaurus/theme-classic NavbarItem/LocaleDropdownNavbarItem -- --eject --danger
@@ -29,3 +28,5 @@ BlogSidebar
 
 
  -->
+
+https://ouweiya.github.io/Dual-Caption-Blog
