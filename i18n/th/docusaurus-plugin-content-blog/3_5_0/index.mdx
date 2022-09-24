@@ -1,0 +1,47 @@
+---
+authors: ouweiya
+date: 2021-08-24
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import light from './light.png';
+import dark from './dark.png';
+import tip from './tip.gif';
+import singlebutton from './singlebutton.png';
+import single from './single.png';
+import translationError from './translationError.gif';
+
+# หมายเหตุการอัปเดตคำบรรยายคู่ของ YouTube™ 3.5.0
+
+### รูปแบบตัวอักษรที่กำหนดเอง
+
+คลิกไอคอนส่วนขยายเพื่อเปิดหน้าการตั้งค่าเพื่อรองรับโหมดมืด
+
+ตัวเลือกที่กำหนดเอง: แบบอักษร ขนาดแบบอักษร สี สีพื้นหลัง ระยะห่าง และลำดับคำบรรยาย
+
+<img src={light} alt="light.png" width="340" height="472" />
+<img src={dark} alt="dark.png" width="340" height="472" />
+
+<Tip>การวางเมาส์เหนือไอคอนจะแสดงความหมายของการตั้งค่า</Tip>
+
+<img src={tip} alt="tip.gif" width="340" height="472" />
+
+### สไตล์คำบรรยายเดียว
+
+หลังจากเปลี่ยนเป็นโหมดคำบรรยายเดี่ยว สามารถตั้งค่ารูปแบบคำบรรยายเดี่ยวได้อย่างอิสระ
+
+<img src={singlebutton} alt="singlebutton.png" width="314" height="372" />
+<img src={single} alt="single.png" width="340" height="406" />
+
+### การเพิ่มประสิทธิภาพอื่น ๆ
+
+ลบไลบรารีโปรแกรม Chinese Traditional to Simplified ลดขนาดโปรแกรมและปรับปรุงประสิทธิภาพ เนื่องจาก YouTube ได้แก้ไขข้อผิดพลาดนี้อย่างเป็นทางการแล้ว
+
+<Tip>บางครั้งคำบรรยายอาจขาดหายไป ส่วนใหญ่เกิดจากข้อผิดพลาดในการแปลของ YouTube</Tip>
+
+<img src={translationError} alt="translationError.gif" width="700" height="396" />
+
+ในอนาคต เราจะแนะนำกลไกการแปลอื่นๆ เพื่อแก้ปัญหานี้และชดเชยความไม่ถูกต้องในการแปล
+
+<WebStore />

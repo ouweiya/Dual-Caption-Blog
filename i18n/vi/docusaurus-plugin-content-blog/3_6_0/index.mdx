@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# YouTube ™ Dual Caption 3.6.0 Ghi chú cập nhật
+
+### Sửa lỗi hợp nhất câu lệnh 🎉
+
+ Trong phiên bản trước, việc hợp nhất câu lệnh không được thực hiện để tuân theo hành vi của chính YouTube.
+
+Điều này khiến các câu văn bị ngắt quãng khi phát video và việc tải phụ đề xuống cũng khiến dòng thời gian bị lộn xộn.
+
+Trong phiên bản 3.6.0, sự cố này đã được khắc phục và nhiều chi tiết đã được tối ưu hóa.
+
+Đã xóa các khoảng trắng thừa trong các câu lệnh hợp nhất.
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+Đã xóa dòng thời gian trống để tải xuống phụ đề.
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### Phụ đề kép ưu tiên phụ đề video
+
+ Trước đây, phụ đề song ngữ luôn được dịch bằng máy. Bây giờ, phụ đề hiện có của video sẽ được sử dụng đầu tiên và bản dịch bằng máy sẽ được sử dụng nếu không có phụ đề.
+
+ Nếu video song ngữ đã có phụ đề, chỉ báo tối ưu hóa sẽ được hiển thị.
+
+ Tải xuống phụ đề cũng sẽ có cùng một cách tối ưu hóa, với một dấu tích ở giữa tên tệp.
+
+<Tip>Biểu trưng cho biết rằng phụ đề song ngữ hiện tại sử dụng phụ đề hiện có của video, không phải bản dịch máy.</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### Tắt các kiểu tùy chỉnh
+
+ Phiên bản này cung cấp tùy chọn tắt kiểu tùy chỉnh và có thể đặt thứ tự phụ đề và khoảng cách độc lập.
+
+<Tip>Mẹo: Tiền đề của việc tối ưu hóa này là hai phụ đề phải khớp chính xác.</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### Tải xuống phụ đề theo thứ tự khi chúng được hiển thị
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

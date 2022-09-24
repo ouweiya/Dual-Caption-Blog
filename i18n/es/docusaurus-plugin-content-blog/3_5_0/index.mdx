@@ -1,0 +1,47 @@
+---
+authors: ouweiya
+date: 2021-08-24
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import light from './light.png';
+import dark from './dark.png';
+import tip from './tip.gif';
+import singlebutton from './singlebutton.png';
+import single from './single.png';
+import translationError from './translationError.gif';
+
+# Notas de actualización de YouTube™ Dual Caption 3.5.0
+
+### Estilo de fuente personalizado
+
+Haga clic en el icono de la extensión para abrir la página de configuración y admitir el modo oscuro.
+
+Opciones personalizadas: fuente, tamaño de fuente, color, color de fondo, espaciado y orden de los subtítulos.
+
+<img src={light} alt="light.png" width="340" height="472" />
+<img src={dark} alt="dark.png" width="340" height="472" />
+
+<Tip>Al pasar el cursor sobre el icono, se revelará lo que representa la configuración.</Tip>
+
+<img src={tip} alt="tip.gif" width="340" height="472" />
+
+### Estilo de subtítulo único
+
+Después de cambiar al modo de subtítulos únicos, el estilo de subtítulos únicos se puede configurar de forma independiente.
+
+<img src={singlebutton} alt="singlebutton.png" width="314" height="372" />
+<img src={single} alt="single.png" width="340" height="406" />
+
+### Otras optimizaciones
+
+Elimine la biblioteca de programas de chino tradicional a simplificado, reduzca el tamaño del programa y mejore el rendimiento, porque YouTube solucionó oficialmente este error.
+
+<Tip>A veces faltan subtítulos, principalmente debido a errores de traducción de YouTube.</Tip>
+
+<img src={translationError} alt="translationError.gif" width="700" height="396" />
+
+En el futuro, se introducirán otros motores de traducción para resolver este problema y compensar la inexactitud de la traducción.
+
+<WebStore />

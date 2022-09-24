@@ -1,0 +1,26 @@
+---
+authors: ouweiya
+date: 2022-04-11
+---
+
+import WebStore from '/src/components/WebStore';
+import qualityLock from './qualityLock.png';
+import defaultStyle from './defaultStyle.png';
+
+# YouTube™ 双字幕 3.6.6 更新说明
+
+### 修复视频画质锁死
+
+在 3.6.3 版本中提供了视频画质锁定功能，但是当选择为自动时，画质仍然锁定无法动态调节，现在修复了这个问题。
+
+<img src={qualityLock} alt="qualityLock.png" width="276" height="389" />
+
+### 恢复字幕默认样式
+
+在以前版本中提供了预设的字幕样式，现在字幕默认样式与 YouTube 保持一致。
+
+如果需要恢复到默认样式，可以点击重置样式按钮。
+
+<img src={defaultStyle} alt="defaultStyle.png" width="340" height="524" />
+
+<WebStore />

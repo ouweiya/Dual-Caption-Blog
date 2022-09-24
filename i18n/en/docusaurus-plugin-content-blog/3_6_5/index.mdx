@@ -1,0 +1,40 @@
+---
+authors: ouweiya
+date: 2022-04-07
+---
+
+import WebStore from '/src/components/WebStore';
+import improveHandle from './improveHandle.gif';
+import subtitleRightClickMenu from './subtitleRightClickMenu.gif';
+import subtitleTips from './subtitleTips.png';
+import subtitleWrap from './subtitleWrap.png';
+
+
+
+# YouTube™ Dual Caption 3.6.5 Update Notes
+
+ ### Fix subtitles not wrapping
+
+ Fixed an issue that caused subtitles to overflow without wrapping when the font was too large in the previous version.
+
+<img src={subtitleWrap} alt="subtitleWrap.png" width="600" height="698" />
+
+### Fix subtitle prompt
+
+In previous versions, the subtitle prompt will also use the style, and now this problem is avoided.
+
+<img src={subtitleTips} alt="subtitleTips.png" width="600" height="682" />
+
+### Improve the handle
+
+The handle buttons used to be difficult to drag when the subtitle was dragged to the border, now it is easier to use by changing the handle position.
+
+<img src={improveHandle} alt="improveHandle.gif" width="600" height="338" />
+
+### Subtitle right-click menu
+
+In the past, subtitles could be copied, but right-click operation could not be performed. Now this problem has been improved.
+
+<img src={subtitleRightClickMenu} alt="subtitleRightClickMenu.gif" width="600" height="313" />
+
+<WebStore />

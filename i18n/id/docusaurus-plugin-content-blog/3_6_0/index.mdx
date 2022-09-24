@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# Catatan Pembaruan YouTube™ Dual Caption 3.6.0
+
+### Perbaiki penggabungan pernyataan
+
+ Pada versi sebelumnya, penggabungan pernyataan tidak dilakukan untuk mengikuti perilaku YouTube sendiri.
+
+Hal ini menyebabkan kalimat menjadi terputus-putus saat memutar video, dan mengunduh subtitle juga menyebabkan timeline menjadi berantakan.
+
+Di versi 3.6.0, masalah ini telah diperbaiki dan lebih banyak detail telah dioptimalkan.
+
+Menghapus spasi ekstra dalam pernyataan gabungan.
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+Garis waktu kosong yang dihapus untuk mengunduh subtitle.
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### Subtitle ganda mengutamakan subtitle video
+
+ Dulu subtitle bilingual selalu diterjemahkan dengan mesin, sekarang subtitle video yang ada akan digunakan terlebih dahulu, dan terjemahan mesin akan digunakan jika tidak ada subtitle.
+
+ Jika video bilingual sudah memiliki subtitle, indikator pengoptimalan akan ditampilkan.
+
+ Mengunduh subtitle juga akan memiliki optimasi yang sama, dengan tanda centang di tengah nama file.
+
+<Tip>Logo menunjukkan bahwa subtitle bilingual saat ini menggunakan subtitle video yang ada, bukan terjemahan mesin.</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### Matikan gaya khusus
+
+ Versi ini menyediakan opsi untuk menonaktifkan gaya kustom, dan dapat mengatur urutan subtitle dan spasi secara mandiri.
+
+<Tip>Tip: Premis dari pengoptimalan ini adalah bahwa kedua subtitle harus sama persis.</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### Unduh subtitle dalam urutan yang sama seperti yang ditampilkan
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

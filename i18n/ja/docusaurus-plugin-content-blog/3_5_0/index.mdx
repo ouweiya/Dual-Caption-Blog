@@ -1,0 +1,47 @@
+---
+authors: ouweiya
+date: 2021-08-24
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import light from './light.png';
+import dark from './dark.png';
+import tip from './tip.gif';
+import singlebutton from './singlebutton.png';
+import single from './single.png';
+import translationError from './translationError.gif';
+
+# YouTube™ デュアル キャプション 3.5.0 アップデート ノート
+
+### カスタムフォントスタイル
+
+拡張機能アイコンをクリックして設定ページをポップアップし、ダーク モードをサポートします。
+
+カスタム オプション: フォント、フォント サイズ、色、背景色、間隔、字幕の順序。
+
+<img src={light} alt="light.png" width="340" height="472" />
+<img src={dark} alt="dark.png" width="340" height="472" />
+
+<Tip>アイコンにカーソルを合わせると、設定が何を表しているかが表示されます。</Tip>
+
+<img src={tip} alt="tip.gif" width="340" height="472" />
+
+### 単一字幕スタイル
+
+単一字幕モードに切り替えた後、単一字幕スタイルを個別に設定できます。
+
+<img src={singlebutton} alt="singlebutton.png" width="314" height="372" />
+<img src={single} alt="single.png" width="340" height="406" />
+
+### その他の最適化
+
+YouTube がこのバグを正式に修正したため、繁体字から簡体字のプログラム ライブラリを削除し、プログラム サイズを縮小してパフォーマンスを向上させます。
+
+<Tip>主に YouTube の翻訳エラーが原因で、字幕が表示されないことがあります。</Tip>
+
+<img src={translationError} alt="translationError.gif" width="700" height="396" />
+
+将来的には、この問題を解決し、翻訳の不正確さを補うために、他の翻訳エンジンが導入される予定です。
+
+<WebStore />

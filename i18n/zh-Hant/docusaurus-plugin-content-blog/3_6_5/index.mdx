@@ -1,0 +1,40 @@
+---
+authors: ouweiya
+date: 2022-04-07
+---
+
+import WebStore from '/src/components/WebStore';
+import improveHandle from './improveHandle.gif';
+import subtitleRightClickMenu from './subtitleRightClickMenu.gif';
+import subtitleTips from './subtitleTips.png';
+import subtitleWrap from './subtitleWrap.png';
+
+
+
+# YouTube™ 雙字幕 3.6.5 更新說明
+
+ ### 修復字幕不換行
+
+ 在上一個版本中當字體太大時會導致字幕溢出而無法換行，現在修復了這個問題。
+
+<img src={subtitleWrap} alt="subtitleWrap.png" width="600" height="698" />
+
+### 修復字幕提示
+
+在以往版本中字幕提示也會運用上樣式，現在規避了這個問題。
+
+<img src={subtitleTips} alt="subtitleTips.png" width="600" height="682" />
+
+### 改善手柄
+
+以往當字幕拖動到邊界時手柄按鈕難以拖拽，現在通過改變手柄位置更方便使用。
+
+<img src={improveHandle} alt="improveHandle.gif" width="600" height="338" />
+
+### 字幕右鍵菜單
+
+以往字幕可以復制，但是無法進行右鍵操作，現在改善了這個問題。
+
+<img src={subtitleRightClickMenu} alt="subtitleRightClickMenu.gif" width="600" height="313" />
+
+<WebStore />

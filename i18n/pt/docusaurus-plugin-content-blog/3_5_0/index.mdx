@@ -1,0 +1,47 @@
+---
+authors: ouweiya
+date: 2021-08-24
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import light from './light.png';
+import dark from './dark.png';
+import tip from './tip.gif';
+import singlebutton from './singlebutton.png';
+import single from './single.png';
+import translationError from './translationError.gif';
+
+# Notas de atualização do YouTube™ Dual Caption 3.5.0
+
+### Estilo de fonte personalizado
+
+Clique no ícone da extensão para abrir a página de configurações para oferecer suporte ao modo escuro.
+
+Opções personalizadas: fonte, tamanho da fonte, cor, cor de fundo, espaçamento e ordem das legendas.
+
+<img src={light} alt="light.png" width="340" height="472" />
+<img src={dark} alt="dark.png" width="340" height="472" />
+
+<Tip>Passar o mouse sobre o ícone revelará o que a configuração representa.</Tip>
+
+<img src={tip} alt="tip.gif" width="340" height="472" />
+
+### Estilo de legenda única
+
+Depois de mudar para o modo de legenda simples, o estilo de legenda simples pode ser definido de forma independente.
+
+<img src={singlebutton} alt="singlebutton.png" width="314" height="372" />
+<img src={single} alt="single.png" width="340" height="406" />
+
+### Outras otimizações
+
+Remova a biblioteca de programas chinês tradicional para simplificado, reduza o tamanho do programa e melhore o desempenho, porque o YouTube corrigiu oficialmente esse bug.
+
+<Tip>Às vezes, as legendas estão faltando, principalmente devido a erros de tradução do YouTube.</Tip>
+
+<img src={translationError} alt="translationError.gif" width="700" height="396" />
+
+No futuro, outros mecanismos de tradução serão introduzidos para resolver esse problema e compensar a imprecisão da tradução.
+
+<WebStore />

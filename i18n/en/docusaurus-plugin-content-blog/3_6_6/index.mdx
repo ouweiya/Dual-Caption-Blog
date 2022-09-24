@@ -1,0 +1,28 @@
+---
+authors: ouweiya
+date: 2022-04-11
+---
+
+import WebStore from '/src/components/WebStore';
+import qualityLock from './qualityLock.png';
+import defaultStyle from './defaultStyle.png';
+
+
+
+# YouTube™ Dual Caption 3.6.6 Update Notes
+
+ ### Fix video quality lock
+
+ The video quality lock function was provided in version 3.6.3, but when Auto is selected, the quality is still locked and cannot be adjusted dynamically. This problem is now fixed.
+
+<img src={qualityLock} alt="qualityLock.png" width="276" height="389" />
+
+### Restore subtitle default style
+
+Preset subtitle styles were provided in previous versions, and the subtitle default style is now consistent with YouTube.
+
+If you need to revert to the default style, you can click the Reset Style button.
+
+<img src={defaultStyle} alt="defaultStyle.png" width="340" height="524" />
+
+<WebStore />

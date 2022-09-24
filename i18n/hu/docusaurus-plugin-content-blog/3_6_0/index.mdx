@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# YouTube™ Dual Caption 3.6.0 frissítési megjegyzések
+
+### Javítsa ki a nyilatkozat egyesítését 🎉
+
+ Az előző verzióban az utasítások összevonása nem történt meg a YouTube saját viselkedésének követése érdekében.
+
+Emiatt a mondatok szaggatottak voltak a videó lejátszásakor, és a feliratok letöltése miatt az idővonal is zsúfolt lett.
+
+A 3.6.0-s verzióban ezt a problémát kijavították, és további részleteket optimalizáltak.
+
+A felesleges szóközök eltávolítva az egyesítési utasításokból.
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+Eltávolítottuk az üres idővonalat a feliratok letöltéséhez.
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### A kettős feliratok előnyben részesítik a videófeliratokat
+
+ Régebben a kétnyelvű feliratokat mindig gépi fordításban használták, most először a videó meglévő feliratait használják fel, ha pedig nincs felirat, akkor gépi fordítást alkalmaznak.
+
+ Ha a kétnyelvű videónak már van felirata, megjelenik egy optimalizálási jelző.
+
+ A feliratok letöltése is ugyanazzal az optimalizálással történik, a fájlnév közepén egy pipával.
+
+<Tip>A logó azt jelzi, hogy a jelenlegi kétnyelvű feliratok a videó meglévő feliratait használják, nem gépi fordítást.</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### Az egyéni stílusok kikapcsolása
+
+ Ez a verzió lehetőséget biztosít az egyéni stílus kikapcsolására, és önállóan beállíthatja a feliratok sorrendjét és a szóközt.
+
+<Tip>Tipp: Ennek az optimalizálásnak az az előfeltétele, hogy a két feliratnak pontosan meg kell egyeznie.</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### A feliratok letöltése a megjelenítésük sorrendjében
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

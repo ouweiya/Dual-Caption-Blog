@@ -1,0 +1,47 @@
+---
+authors: ouweiya
+date: 2021-08-24
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import light from './light.png';
+import dark from './dark.png';
+import tip from './tip.gif';
+import singlebutton from './singlebutton.png';
+import single from './single.png';
+import translationError from './translationError.gif';
+
+# Примечания к обновлению YouTube™ Dual Caption 3.5.0
+
+### Пользовательский стиль шрифта
+
+Щелкните значок расширения, чтобы открыть страницу настроек для поддержки темного режима.
+
+Пользовательские параметры: шрифт, размер шрифта, цвет, цвет фона, интервал и порядок субтитров.
+
+<img src={light} alt="light.png" width="340" height="472" />
+<img src={dark} alt="dark.png" width="340" height="472" />
+
+<Tip>Наведение курсора на значок покажет, что представляет собой настройка.</Tip>
+
+<img src={tip} alt="tip.gif" width="340" height="472" />
+
+### Одиночный стиль субтитров
+
+После переключения в режим одиночных субтитров стиль одиночных субтитров можно установить независимо.
+
+<img src={singlebutton} alt="singlebutton.png" width="314" height="372" />
+<img src={single} alt="single.png" width="340" height="406" />
+
+### Другие оптимизации
+
+Удалите библиотеку программ с китайского традиционного на упрощенный, уменьшите размер программы и улучшите производительность, потому что YouTube официально исправил эту ошибку.
+
+<Tip>Иногда субтитры отсутствуют, в основном из-за ошибок перевода YouTube.</Tip>
+
+<img src={translationError} alt="translationError.gif" width="700" height="396" />
+
+В будущем будут внедрены другие механизмы перевода, чтобы решить эту проблему и компенсировать неточность перевода.
+
+<WebStore />

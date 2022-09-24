@@ -1,0 +1,40 @@
+---
+authors: ouweiya
+date: 2022-04-07
+---
+
+import WebStore from '/src/components/WebStore';
+import improveHandle from './improveHandle.gif';
+import subtitleRightClickMenu from './subtitleRightClickMenu.gif';
+import subtitleTips from './subtitleTips.png';
+import subtitleWrap from './subtitleWrap.png';
+
+
+
+# YouTube™ デュアル キャプション 3.6.5 アップデート ノート
+
+ ### 字幕がラップしない問題を修正
+
+ 以前のバージョンでフォントが大きすぎると、字幕が折り返されずにオーバーフローする問題を修正しました。
+
+<img src={subtitleWrap} alt="subtitleWrap.png" width="600" height="698" />
+
+### 字幕プロンプトを修正
+
+以前のバージョンでは、字幕プロンプトもスタイルを使用していましたが、この問題は回避されました。
+
+<img src={subtitleTips} alt="subtitleTips.png" width="600" height="682" />
+
+### ハンドルを改善する
+
+字幕を枠線までドラッグするとハンドルボタンがドラッグしにくかったのですが、ハンドルの位置を変えることで使いやすくなりました。
+
+<img src={improveHandle} alt="improveHandle.gif" width="600" height="338" />
+
+### 字幕右クリックメニュー
+
+従来、字幕のコピーはできたものの、右クリック操作ができなかった問題が改善されました。
+
+<img src={subtitleRightClickMenu} alt="subtitleRightClickMenu.gif" width="600" height="313" />
+
+<WebStore />

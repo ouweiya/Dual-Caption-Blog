@@ -1,0 +1,28 @@
+---
+authors: ouweiya
+date: 2022-04-11
+---
+
+import WebStore from '/src/components/WebStore';
+import qualityLock from './qualityLock.png';
+import defaultStyle from './defaultStyle.png';
+
+
+
+# Примітки щодо оновлення YouTube™ Dual Caption 3.6.6
+
+ ### Виправте блокування якості відео
+
+ Функцію блокування якості відео було надано у версії 3.6.3, але коли вибрано «Авто», якість все одно заблоковано та не може регулюватися динамічно. Тепер цю проблему вирішено.
+
+<img src={qualityLock} alt="qualityLock.png" width="276" height="389" />
+
+### Відновити стандартний стиль субтитрів
+
+Попередньо встановлені стилі субтитрів були надані в попередніх версіях, а стандартний стиль субтитрів тепер узгоджується з YouTube.
+
+Якщо вам потрібно повернутися до стилю за замовчуванням, ви можете натиснути кнопку «Скинути стиль».
+
+<img src={defaultStyle} alt="defaultStyle.png" width="340" height="524" />
+
+<WebStore />

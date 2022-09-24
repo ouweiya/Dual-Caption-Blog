@@ -1,0 +1,28 @@
+---
+authors: ouweiya
+date: 2022-04-11
+---
+
+import WebStore from '/src/components/WebStore';
+import qualityLock from './qualityLock.png';
+import defaultStyle from './defaultStyle.png';
+
+
+
+# YouTube™ デュアル キャプション 3.6.6 アップデート ノート
+
+ ### ビデオ品質のロックを修正
+
+ バージョン 3.6.3 で画質ロック機能が追加されましたが、Auto を選択すると画質がロックされたままになり、動的に調整することができませんでしたが、この問題は修正されました。
+
+<img src={qualityLock} alt="qualityLock.png" width="276" height="389" />
+
+### 字幕のデフォルト スタイルを復元する
+
+以前のバージョンではプリセットの字幕スタイルが提供されていましたが、字幕のデフォルト スタイルは YouTube と一致するようになりました。
+
+デフォルトのスタイルに戻す必要がある場合は、[スタイルのリセット] ボタンをクリックできます。
+
+<img src={defaultStyle} alt="defaultStyle.png" width="340" height="524" />
+
+<WebStore />

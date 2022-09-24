@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# YouTube™ 雙字幕 3.6.0 更新說明
+
+### 修復語句合併 🎉
+
+ 在上一個版本中，為了遵循 YouTube 本身的行為，所以沒有進行語句合併。
+
+造成了在播放視頻時語句斷斷續續，下載字幕還會引起時間軸錯亂。
+
+在 3.6.0 版本中，修復了這個問題，並且優化了更多細節。
+
+刪除了合併語句中多餘的空格。
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+刪除了下載字幕空白時間軸。
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### 雙字幕優先使用視頻字幕
+
+ 以前雙語字幕總是採用機器翻譯，現在將優先使用視頻已有字幕，如果沒有則使用機器翻譯。
+
+ 如果雙語使用的是視頻已有字幕，將顯示優化標識。
+
+ 下載字幕也會有同樣的優化，文件名中間有一個勾號。
+
+<Tip>標識表示：當前雙語字幕使用的是視頻已有字幕，而不是機器翻譯。</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### 關閉自定義樣式
+
+ 本次版本中提供關閉自定義樣式選項，同時可以單獨設置字幕順序和間距。
+
+<Tip>提示：得到這樣優化的前提是兩種字幕必須完全匹配。</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### 下載字幕與顯示順序保持一致
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

@@ -1,0 +1,40 @@
+---
+authors: ouweiya
+date: 2022-04-07
+---
+
+import WebStore from '/src/components/WebStore';
+import improveHandle from './improveHandle.gif';
+import subtitleRightClickMenu from './subtitleRightClickMenu.gif';
+import subtitleTips from './subtitleTips.png';
+import subtitleWrap from './subtitleWrap.png';
+
+
+
+# Примітки щодо оновлення YouTube™ Dual Caption 3.6.5
+
+ ### Виправити субтитри, які не загортаються
+
+ Виправлено проблему, яка спричиняла переповнення субтитрів без обтікання, коли шрифт був занадто великим у попередній версії.
+
+<img src={subtitleWrap} alt="subtitleWrap.png" width="600" height="698" />
+
+### Виправити підказку субтитрів
+
+У попередніх версіях підказка субтитрів також використовуватиме стиль, і тепер цієї проблеми уникнуто.
+
+<img src={subtitleTips} alt="subtitleTips.png" width="600" height="682" />
+
+### Покращити ручку
+
+Раніше було важко перетягувати кнопки-маніпулятори, коли субтитри перетягувалися до межі, тепер ними легше користуватися, змінивши положення маркера.
+
+<img src={improveHandle} alt="improveHandle.gif" width="600" height="338" />
+
+### Меню субтитрів, що натискається правою кнопкою миші
+
+Раніше субтитри можна було скопіювати, але не можна було клацнути правою кнопкою миші. Тепер цю проблему вирішено.
+
+<img src={subtitleRightClickMenu} alt="subtitleRightClickMenu.gif" width="600" height="313" />
+
+<WebStore />

@@ -1,0 +1,40 @@
+---
+authors: ouweiya
+date: 2022-04-07
+---
+
+import WebStore from '/src/components/WebStore';
+import improveHandle from './improveHandle.gif';
+import subtitleRightClickMenu from './subtitleRightClickMenu.gif';
+import subtitleTips from './subtitleTips.png';
+import subtitleWrap from './subtitleWrap.png';
+
+
+
+# YouTube™ Dual Caption 3.6.5 Примечания к обновлению
+
+ ### Исправьте субтитры, которые не переносятся
+
+ Исправлена проблема, из-за которой субтитры переполнялись без переноса, если в предыдущей версии шрифт был слишком большим.
+
+<img src={subtitleWrap} alt="subtitleWrap.png" width="600" height="698" />
+
+### Исправить запрос субтитров
+
+В предыдущих версиях приглашение к субтитрам также использовало этот стиль, и теперь этой проблемы удалось избежать.
+
+<img src={subtitleTips} alt="subtitleTips.png" width="600" height="682" />
+
+### Улучшить дескриптор
+
+Кнопки-ручки раньше было трудно перетаскивать, когда субтитры перетаскивались к границе, теперь их проще использовать, изменив положение ручки.
+
+<img src={improveHandle} alt="improveHandle.gif" width="600" height="338" />
+
+### Контекстное меню субтитров
+
+Раньше можно было копировать субтитры, но нельзя было выполнить операцию правого клика Теперь эта проблема исправлена.
+
+<img src={subtitleRightClickMenu} alt="subtitleRightClickMenu.gif" width="600" height="313" />
+
+<WebStore />

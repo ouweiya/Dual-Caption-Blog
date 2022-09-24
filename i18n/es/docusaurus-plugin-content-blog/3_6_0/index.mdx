@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# Notas de actualización de YouTube™ Dual Caption 3.6.0
+
+### Arreglar la fusión de declaraciones 🎉
+
+ En la versión anterior, la combinación de declaraciones no se realizaba para seguir el comportamiento de YouTube.
+
+Esto provocó que las oraciones se entrecortaran al reproducir el video, y la descarga de subtítulos también provocó que la línea de tiempo se saturara.
+
+En la versión 3.6.0, este problema se solucionó y se optimizaron más detalles.
+
+Se eliminaron los espacios adicionales en las declaraciones de combinación.
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+Se eliminó la línea de tiempo en blanco para descargar subtítulos.
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### Los subtítulos duales dan prioridad a los subtítulos de video
+
+ En el pasado, los subtítulos bilingües siempre se traducían automáticamente. Ahora, los subtítulos existentes del video se usarán primero y se usará la traducción automática si no hay subtítulos.
+
+ Si el video bilingüe ya tiene subtítulos, se mostrará un indicador de optimización.
+
+ La descarga de subtítulos también tendrá la misma optimización, con una marca en medio del nombre del archivo.
+
+<Tip>El logotipo indica que los subtítulos bilingües actuales usan los subtítulos existentes del video, no la traducción automática.</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### Desactivar estilos personalizados
+
+ Esta versión ofrece la opción de desactivar el estilo personalizado y puede establecer el orden y el espaciado de los subtítulos de forma independiente.
+
+<Tip>Consejo: La premisa de esta optimización es que los dos subtítulos deben coincidir exactamente.</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### Descarga los subtítulos en el mismo orden en que se muestran
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

@@ -1,0 +1,40 @@
+---
+authors: ouweiya
+date: 2022-04-07
+---
+
+import WebStore from '/src/components/WebStore';
+import improveHandle from './improveHandle.gif';
+import subtitleRightClickMenu from './subtitleRightClickMenu.gif';
+import subtitleTips from './subtitleTips.png';
+import subtitleWrap from './subtitleWrap.png';
+
+
+
+# บันทึกการอัพเดตคำบรรยายคู่ของ YouTube™ 3.6.5
+
+ ### แก้ไขคำบรรยายไม่ห่อ
+
+ แก้ไขปัญหาที่ทำให้คำบรรยายล้นโดยไม่มีการตัดคำเมื่อแบบอักษรมีขนาดใหญ่เกินไปในเวอร์ชันก่อนหน้า
+
+<img src={subtitleWrap} alt="subtitleWrap.png" width="600" height="698" />
+
+### แก้ไขพร้อมท์คำบรรยาย
+
+ในเวอร์ชันก่อนหน้า พรอมต์คำบรรยายจะใช้สไตล์นี้ด้วย และตอนนี้ก็หลีกเลี่ยงปัญหานี้ได้แล้ว
+
+<img src={subtitleTips} alt="subtitleTips.png" width="600" height="682" />
+
+### ปรับปรุงที่จับ
+
+ปุ่มแฮนเดิลเคยลากยากเมื่อลากคำบรรยายไปที่เส้นขอบ ตอนนี้ใช้งานง่ายขึ้นด้วยการเปลี่ยนตำแหน่งแฮนเดิล
+
+<img src={improveHandle} alt="improveHandle.gif" width="600" height="338" />
+
+### เมนูคลิกขวาคำบรรยาย
+
+ในอดีต สามารถคัดลอกคำบรรยายได้ แต่ไม่สามารถทำการคลิกขวาได้ ขณะนี้ ปัญหานี้ได้รับการปรับปรุงแล้ว
+
+<img src={subtitleRightClickMenu} alt="subtitleRightClickMenu.gif" width="600" height="313" />
+
+<WebStore />

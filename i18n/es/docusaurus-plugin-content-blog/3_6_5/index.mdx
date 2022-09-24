@@ -1,0 +1,40 @@
+---
+authors: ouweiya
+date: 2022-04-07
+---
+
+import WebStore from '/src/components/WebStore';
+import improveHandle from './improveHandle.gif';
+import subtitleRightClickMenu from './subtitleRightClickMenu.gif';
+import subtitleTips from './subtitleTips.png';
+import subtitleWrap from './subtitleWrap.png';
+
+
+
+# Notas de actualización de YouTube™ Dual Caption 3.6.5
+
+ ### Arreglar los subtítulos que no se envuelven
+
+ Se solucionó un problema que causaba que los subtítulos se desbordaran sin ajustarse cuando la fuente era demasiado grande en la versión anterior.
+
+<img src={subtitleWrap} alt="subtitleWrap.png" width="600" height="698" />
+
+### Arreglar aviso de subtítulos
+
+En versiones anteriores, la solicitud de subtítulos también usaba el estilo, y ahora se evita este problema.
+
+<img src={subtitleTips} alt="subtitleTips.png" width="600" height="682" />
+
+### Mejorar el manejo
+
+Los botones de manija solían ser difíciles de arrastrar cuando el subtítulo se arrastraba al borde, ahora es más fácil de usar cambiando la posición de la manija.
+
+<img src={improveHandle} alt="improveHandle.gif" width="600" height="338" />
+
+### Menú contextual de subtítulos
+
+En el pasado, los subtítulos se podían copiar, pero la operación de clic derecho no se podía realizar. Ahora este problema se ha mejorado.
+
+<img src={subtitleRightClickMenu} alt="subtitleRightClickMenu.gif" width="600" height="313" />
+
+<WebStore />

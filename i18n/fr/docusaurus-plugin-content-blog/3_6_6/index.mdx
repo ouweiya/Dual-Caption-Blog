@@ -1,0 +1,28 @@
+---
+authors: ouweiya
+date: 2022-04-11
+---
+
+import WebStore from '/src/components/WebStore';
+import qualityLock from './qualityLock.png';
+import defaultStyle from './defaultStyle.png';
+
+
+
+# Notes de mise à jour YouTube™ Dual Caption 3.6.6
+
+ ### Correction du verrouillage de la qualité vidéo
+
+ La fonction de verrouillage de la qualité vidéo était fournie dans la version 3.6.3, mais lorsque Auto est sélectionné, la qualité est toujours verrouillée et ne peut pas être ajustée dynamiquement. Ce problème est maintenant résolu.
+
+<img src={qualityLock} alt="qualityLock.png" width="276" height="389" />
+
+### Restaurer le style par défaut des sous-titres
+
+Des styles de sous-titres prédéfinis étaient fournis dans les versions précédentes, et le style par défaut des sous-titres est désormais compatible avec YouTube.
+
+Si vous devez revenir au style par défaut, vous pouvez cliquer sur le bouton Réinitialiser le style.
+
+<img src={defaultStyle} alt="defaultStyle.png" width="340" height="524" />
+
+<WebStore />

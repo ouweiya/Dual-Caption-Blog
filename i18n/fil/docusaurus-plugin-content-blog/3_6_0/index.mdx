@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# YouTube™ Dual Caption 3.6.0 Update Notes
+
+### Ayusin ang pagsasama ng pahayag 🎉
+
+ Sa nakaraang bersyon, hindi ginawa ang pagsasanib ng pahayag upang masundan ang sariling gawi ng YouTube.
+
+Naging sanhi ito ng pabagu-bago ng mga pangungusap kapag nagpe-play ng video, at ang pag-download ng mga subtitle ay naging sanhi din ng pagkagulo ng timeline.
+
+Sa bersyon 3.6.0, ang problemang ito ay naayos at higit pang mga detalye ang na-optimize.
+
+Inalis ang mga dagdag na puwang sa mga merge statement.
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+Inalis ang blangkong timeline para sa pag-download ng mga subtitle.
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### Binibigyan ng priyoridad ng dalawahang subtitle ang mga subtitle ng video
+
+ Dati, palaging machine-translated ang mga bilingual na subtitle. Ngayon, gagamitin muna ang mga kasalukuyang subtitle ng video, at gagamitin ang machine translation kung walang subtitle.
+
+ Kung ang bilingual na video ay mayroon nang mga subtitle, isang optimization indicator ang ipapakita.
+
+ Ang pag-download ng mga subtitle ay magkakaroon din ng parehong pag-optimize, na may tik sa gitna ng filename.
+
+<Tip>Isinasaad ng logo na ginagamit ng kasalukuyang mga bilingual na subtitle ang mga kasalukuyang subtitle ng video, hindi ang machine translation.</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### I-off ang mga custom na istilo
+
+ Ang bersyon na ito ay nagbibigay ng opsyon upang i-off ang custom na istilo, at maaaring itakda ang pagkakasunud-sunod ng subtitle at spacing nang hiwalay.
+
+<Tip>Tip: Ang saligan ng pag-optimize na ito ay dapat na eksaktong magkatugma ang dalawang subtitle.</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### Mag-download ng mga subtitle sa parehong pagkakasunud-sunod kung paano ipinapakita ang mga ito
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

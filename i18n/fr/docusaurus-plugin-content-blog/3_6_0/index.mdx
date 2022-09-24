@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# Notes de mise à jour de YouTube™ Dual Caption 3.6.0
+
+### Correction de la fusion des déclarations 🎉
+
+ Dans la version précédente, la fusion des déclarations n'était pas effectuée afin de suivre le comportement de YouTube.
+
+Cela a rendu les phrases saccadées lors de la lecture de la vidéo, et le téléchargement de sous-titres a également encombré la chronologie.
+
+Dans la version 3.6.0, ce problème a été corrigé et plus de détails ont été optimisés.
+
+Suppression des espaces supplémentaires dans les instructions de fusion.
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+Suppression de la chronologie vide pour le téléchargement des sous-titres.
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### Les sous-titres doubles donnent la priorité aux sous-titres vidéo
+
+ Dans le passé, les sous-titres bilingues étaient toujours traduits automatiquement. Désormais, les sous-titres existants de la vidéo seront utilisés en premier, et la traduction automatique sera utilisée s'il n'y a pas de sous-titres.
+
+ Si la vidéo bilingue a déjà des sous-titres, un indicateur d'optimisation s'affichera.
+
+ Le téléchargement des sous-titres aura également la même optimisation, avec une coche au milieu du nom du fichier.
+
+<Tip>Le logo indique que les sous-titres bilingues actuels utilisent les sous-titres existants de la vidéo, et non la traduction automatique.</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### Désactiver les styles personnalisés
+
+ Cette version offre la possibilité de désactiver le style personnalisé et peut définir l'ordre et l'espacement des sous-titres indépendamment.
+
+<Tip>Astuce : Le principe de cette optimisation est que les deux sous-titres doivent correspondre exactement.</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### Téléchargez les sous-titres dans le même ordre qu'ils sont affichés
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

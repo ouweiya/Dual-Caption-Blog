@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# YouTube™ Dual Caption 3.6.0 Update Notes
+
+### Fix statement merging 🎉
+
+ In the previous version, statement merging was not done in order to follow YouTube's own behavior.
+
+This caused the sentences to be choppy when playing the video, and downloading subtitles also caused the timeline to be cluttered.
+
+In version 3.6.0, this problem has been fixed and more details have been optimized.
+
+Removed extra spaces in merge statements.
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+Removed blank timeline for downloading subtitles.
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### Dual subtitles give priority to video subtitles
+
+ In the past, bilingual subtitles were always machine-translated. Now, the existing subtitles of the video will be used first, and machine translation will be used if there is no subtitle.
+
+ If the bilingual video already has subtitles, an optimization indicator will be displayed.
+
+ Downloading subtitles will also have the same optimization, with a tick in the middle of the filename.
+
+<Tip>The logo indicates that the current bilingual subtitles use the existing subtitles of the video, not machine translation.</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### Turn off custom styles
+
+ This version provides the option to turn off the custom style, and can set the subtitle order and spacing independently.
+
+<Tip>Tip: The premise of this optimization is that the two subtitles must match exactly.</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### Download subtitles in the same order as they are displayed
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

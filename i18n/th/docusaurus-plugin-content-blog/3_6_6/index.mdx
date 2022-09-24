@@ -1,0 +1,28 @@
+---
+authors: ouweiya
+date: 2022-04-11
+---
+
+import WebStore from '/src/components/WebStore';
+import qualityLock from './qualityLock.png';
+import defaultStyle from './defaultStyle.png';
+
+
+
+# บันทึกการอัพเดตคำบรรยายคู่ของ YouTube™ 3.6.6
+
+ ### แก้ไขการล็อกคุณภาพวิดีโอ
+
+ ฟังก์ชันล็อคคุณภาพวิดีโอมีให้ในเวอร์ชัน 3.6.3 แต่เมื่อเลือกอัตโนมัติ คุณภาพจะยังคงล็อกอยู่และไม่สามารถปรับเปลี่ยนแบบไดนามิกได้ ปัญหานี้ได้รับการแก้ไขแล้ว
+
+<img src={qualityLock} alt="qualityLock.png" width="276" height="389" />
+
+### คืนค่ารูปแบบเริ่มต้นของคำบรรยาย
+
+รูปแบบคำบรรยายที่กำหนดไว้ล่วงหน้ามีให้ในเวอร์ชันก่อนหน้า และขณะนี้รูปแบบเริ่มต้นของคำบรรยายจะสอดคล้องกับ YouTube
+
+หากคุณต้องการเปลี่ยนกลับเป็นสไตล์เริ่มต้น คุณสามารถคลิกปุ่มรีเซ็ตสไตล์ได้
+
+<img src={defaultStyle} alt="defaultStyle.png" width="340" height="524" />
+
+<WebStore />

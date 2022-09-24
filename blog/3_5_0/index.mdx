@@ -1,0 +1,47 @@
+---
+authors: ouweiya
+date: 2021-08-24
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import light from './light.png';
+import dark from './dark.png';
+import tip from './tip.gif';
+import singlebutton from './singlebutton.png';
+import single from './single.png';
+import translationError from './translationError.gif';
+
+# YouTube™ 双字幕 3.5.0 更新说明
+
+### 自定义字体样式
+
+点击扩展图标，弹出设置页面，支持黑暗模式。
+
+自定义选项：字体，字号，颜色，背景颜色，间距，以及字幕顺序。
+
+<img src={light} alt="light.png" width="340" height="472" />
+<img src={dark} alt="dark.png" width="340" height="472" />
+
+<Tip>悬停在图标上将显示设置代表含义。</Tip>
+
+<img src={tip} alt="tip.gif" width="340" height="472" />
+
+### 单字幕样式
+
+切换到单字幕模式后，可以单独设置单字幕样式。
+
+<img src={singlebutton} alt="singlebutton.png" width="314" height="372" />
+<img src={single} alt="single.png" width="340" height="406" />
+
+### 其他优化
+
+移除中文繁体转简体程序库，减少程序体积，提升性能，因为 YouTube 官方已经修复了这个错误。
+
+<Tip>有时候会出现字幕丢失的情况，这主要是因为YouTube翻译出错。</Tip>
+
+<img src={translationError} alt="translationError.gif" width="700" height="396" />
+
+未来会引入其他翻译引擎来解决这个问题和弥补翻译不精准问题。
+
+<WebStore />

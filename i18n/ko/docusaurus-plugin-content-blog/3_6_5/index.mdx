@@ -1,0 +1,40 @@
+---
+authors: ouweiya
+date: 2022-04-07
+---
+
+import WebStore from '/src/components/WebStore';
+import improveHandle from './improveHandle.gif';
+import subtitleRightClickMenu from './subtitleRightClickMenu.gif';
+import subtitleTips from './subtitleTips.png';
+import subtitleWrap from './subtitleWrap.png';
+
+
+
+# YouTube™ 듀얼 캡션 3.6.5 업데이트 노트
+
+ ### 자막이 줄 바꿈되지 않는 문제 수정
+
+ 이전 버전에서 글꼴이 너무 큰 경우 줄바꿈 없이 자막이 오버플로되는 문제가 수정되었습니다.
+
+<img src={subtitleWrap} alt="subtitleWrap.png" width="600" height="698" />
+
+### 자막 프롬프트 수정
+
+이전 버전에서는 자막 프롬프트도 스타일을 사용했지만 이제는 이 문제를 피할 수 있습니다.
+
+<img src={subtitleTips} alt="subtitleTips.png" width="600" height="682" />
+
+### 핸들 개선
+
+자막을 테두리로 드래그할 때 핸들 버튼을 드래그하기 어려웠던 점을 핸들 위치를 변경하여 보다 쉽게 사용할 수 있습니다.
+
+<img src={improveHandle} alt="improveHandle.gif" width="600" height="338" />
+
+### 자막 우클릭 메뉴
+
+기존에는 자막 복사가 가능했는데 우클릭이 안되는 문제가 개선되었습니다.
+
+<img src={subtitleRightClickMenu} alt="subtitleRightClickMenu.gif" width="600" height="313" />
+
+<WebStore />

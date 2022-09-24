@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# Notas de atualização do YouTube™ Dual Caption 3.6.0
+
+### Corrigir a mesclagem de instruções 🎉
+
+ Na versão anterior, a mesclagem de declarações não era feita para seguir o próprio comportamento do YouTube.
+
+Isso fez com que as frases ficassem entrecortadas ao reproduzir o vídeo, e o download de legendas também fez com que a linha do tempo ficasse desordenada.
+
+Na versão 3.6.0, esse problema foi corrigido e mais detalhes foram otimizados.
+
+Espaços extras removidos nas instruções de mesclagem.
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+Removida a linha do tempo em branco para baixar legendas.
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### Legendas duplas dão prioridade às legendas de vídeo
+
+ Antigamente, as legendas bilíngues eram sempre traduzidas automaticamente, agora as legendas existentes do vídeo serão usadas primeiro e a tradução automática será usada se não houver legenda.
+
+ Se o vídeo bilíngue já tiver legendas, um indicador de otimização será exibido.
+
+ O download de legendas também terá a mesma otimização, com uma marca no meio do nome do arquivo.
+
+<Tip>O logotipo indica que as legendas bilíngues atuais usam as legendas existentes do vídeo, não a tradução automática.</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### Desativar estilos personalizados
+
+ Esta versão oferece a opção de desativar o estilo personalizado e pode definir a ordem e o espaçamento das legendas de forma independente.
+
+<Tip>Dica: A premissa dessa otimização é que as duas legendas devem corresponder exatamente.</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### Baixe as legendas na mesma ordem em que são exibidas
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

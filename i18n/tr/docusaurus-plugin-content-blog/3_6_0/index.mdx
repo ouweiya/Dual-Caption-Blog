@@ -1,0 +1,82 @@
+---
+authors: ouweiya
+date: 2021-12-16 
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import mark from './mark.png';
+import disableStyle from './disableStyle.gif';
+import order from './order.gif';
+
+# YouTube™ İkili Altyazı 3.6.0 Güncelleme Notları
+
+### İfade birleştirmeyi düzeltin 🎉
+
+ Önceki sürümde, YouTube'un kendi davranışını takip etmek için ifade birleştirme yapılmamıştı.
+
+Bu da video oynatılırken cümlelerin dalgalı olmasına, alt yazıların indirilmesi de zaman çizelgesinin dağınık olmasına neden oluyordu.
+
+3.6.0 sürümünde bu sorun düzeltildi ve daha fazla ayrıntı optimize edildi.
+
+Birleştirme ifadelerinde fazladan boşluklar kaldırıldı.
+
+```
+ 1
+ 00:00:03,678 --> 00:00:05,960
+ means that many aspects  of our lives
+ 意味着 我们生活的许多方面
+
+ 2
+ 00:00:05,960 --> 00:00:08,214are regulated  by a weird entity.
+ 都 受到一个奇怪的实体的监管。
+
+ 3
+ 00:00:09,050 --> 00:00:13,453It feels like a huge bureaucracy is making decisions over our heads.
+ 感觉就像一个巨大的官僚机构 正在我们的头脑中做出决定。
+ ```
+
+Altyazıları indirmek için boş zaman çizelgesi kaldırıldı.
+
+```
+ 1
+ 00:00:00,000 --> 00:00:00,500
+
+
+
+ 2
+ 00:00:00,500 --> 00:00:03,090
+ PETE LEPAGE: You can now upload extensions using Manifest
+ PETE LEPAGE: 您现在可以 使用 Manifest V3 将扩展程序上传
+
+ 3
+ 00:00:03,090 --> 00:00:05,100
+ V3 to the Chrome Web Store.
+ 到 Chrome 网上应用店。
+ ```
+
+### Çift altyazı, video altyazılarına öncelik verir
+
+ Eskiden çift dilli altyazılar hep makine çevirisiydi, şimdi videonun önce var olan altyazıları kullanılacak, altyazı yoksa makine çevirisi kullanılacak.
+
+ İki dilli videonun zaten altyazıları varsa, bir optimizasyon göstergesi görüntülenecektir.
+
+ Altyazıları indirmek de dosya adının ortasında bir onay işaretiyle aynı optimizasyona sahip olacaktır.
+
+<Tip>Logo, mevcut iki dilli altyazıların makine çevirisini değil, videonun mevcut altyazılarını kullandığını belirtir.</Tip>
+
+<img src={mark} alt="mark.png" width="891" height="262" />
+
+### Özel stilleri kapatın
+
+ Bu sürüm, özel stili kapatma seçeneği sunar ve altyazı sırasını ve aralığını bağımsız olarak ayarlayabilir.
+
+<Tip>İpucu: Bu optimizasyonun dayanağı, iki altyazının tam olarak eşleşmesi gerektiğidir.</Tip>
+
+<img src={disableStyle} alt="disableStyle.gif" width="340" height="585" />
+
+### Altyazıları görüntülendikleri sırayla indirin
+
+<img src={order} alt="order.gif" width="340" height="585" />
+
+<WebStore />

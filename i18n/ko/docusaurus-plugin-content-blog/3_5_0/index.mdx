@@ -1,0 +1,47 @@
+---
+authors: ouweiya
+date: 2021-08-24
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import light from './light.png';
+import dark from './dark.png';
+import tip from './tip.gif';
+import singlebutton from './singlebutton.png';
+import single from './single.png';
+import translationError from './translationError.gif';
+
+# YouTube™ 듀얼 캡션 3.5.0 업데이트 노트
+
+### 사용자 정의 글꼴 스타일
+
+확장 아이콘을 클릭하면 다크 모드를 지원하는 설정 페이지가 나타납니다.
+
+사용자 정의 옵션: 글꼴, 글꼴 크기, 색상, 배경색, 간격 및 자막 순서.
+
+<img src={light} alt="light.png" width="340" height="472" />
+<img src={dark} alt="dark.png" width="340" height="472" />
+
+<Tip>아이콘 위로 마우스를 가져가면 설정이 나타내는 내용이 표시됩니다.</Tip>
+
+<img src={tip} alt="tip.gif" width="340" height="472" />
+
+### 단일 자막 스타일
+
+단일 자막 모드로 전환한 후 단일 자막 스타일을 독립적으로 설정할 수 있습니다.
+
+<img src={singlebutton} alt="singlebutton.png" width="314" height="372" />
+<img src={single} alt="single.png" width="340" height="406" />
+
+### 기타 최적화
+
+YouTube에서 공식적으로 이 버그를 수정했으므로 중국어 번체에서 간체로 프로그램 라이브러리를 제거하고 프로그램 크기를 줄이며 성능을 개선하십시오.
+
+<Tip>YouTube 번역 오류로 인해 자막이 누락되는 경우가 있습니다.</Tip>
+
+<img src={translationError} alt="translationError.gif" width="700" height="396" />
+
+앞으로 이 문제를 해결하고 번역의 부정확성을 보완하기 위해 다른 번역 엔진이 도입될 것입니다.
+
+<WebStore />

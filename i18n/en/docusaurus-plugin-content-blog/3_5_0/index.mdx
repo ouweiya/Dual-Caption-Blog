@@ -1,0 +1,47 @@
+---
+authors: ouweiya
+date: 2021-08-24
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import light from './light.png';
+import dark from './dark.png';
+import tip from './tip.gif';
+import singlebutton from './singlebutton.png';
+import single from './single.png';
+import translationError from './translationError.gif';
+
+# YouTube™ Dual Caption 3.5.0 Update Notes
+
+### Custom font style
+
+Click the extension icon to pop up the settings page to support dark mode.
+
+Custom options: font, font size, color, background color, spacing, and subtitle order.
+
+<img src={light} alt="light.png" width="340" height="472" />
+<img src={dark} alt="dark.png" width="340" height="472" />
+
+<Tip>Hovering over the icon will reveal what the setting represents.</Tip>
+
+<img src={tip} alt="tip.gif" width="340" height="472" />
+
+### Single subtitle style
+
+After switching to single subtitle mode, the single subtitle style can be set independently.
+
+<img src={singlebutton} alt="singlebutton.png" width="314" height="372" />
+<img src={single} alt="single.png" width="340" height="406" />
+
+### Other optimizations
+
+Remove the Chinese Traditional to Simplified program library, reduce program size and improve performance, because YouTube has officially fixed this bug.
+
+<Tip>Sometimes subtitles are missing, mostly due to YouTube translation errors.</Tip>
+
+<img src={translationError} alt="translationError.gif" width="700" height="396" />
+
+In the future, other translation engines will be introduced to solve this problem and make up for translation inaccuracy.
+
+<WebStore />

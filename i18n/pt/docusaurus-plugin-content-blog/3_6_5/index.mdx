@@ -1,0 +1,40 @@
+---
+authors: ouweiya
+date: 2022-04-07
+---
+
+import WebStore from '/src/components/WebStore';
+import improveHandle from './improveHandle.gif';
+import subtitleRightClickMenu from './subtitleRightClickMenu.gif';
+import subtitleTips from './subtitleTips.png';
+import subtitleWrap from './subtitleWrap.png';
+
+
+
+# Notas de atualização do YouTube™ Dual Caption 3.6.5
+
+ ### Corrigir as legendas não quebrando
+
+ Corrigido um problema que fazia com que as legendas transbordassem sem quebra quando a fonte era muito grande na versão anterior.
+
+<img src={subtitleWrap} alt="subtitleWrap.png" width="600" height="698" />
+
+### Corrigir o prompt de legenda
+
+Nas versões anteriores, o prompt de legendas também usaria o estilo, e agora esse problema é evitado.
+
+<img src={subtitleTips} alt="subtitleTips.png" width="600" height="682" />
+
+### Melhore a alça
+
+Os botões da alça costumavam ser difíceis de arrastar quando a legenda era arrastada para a borda, agora é mais fácil de usar alterando a posição da alça.
+
+<img src={improveHandle} alt="improveHandle.gif" width="600" height="338" />
+
+### Menu do botão direito do mouse em legendas
+
+No passado, as legendas podiam ser copiadas, mas a operação de clique com o botão direito não podia ser executada. Agora este problema foi melhorado.
+
+<img src={subtitleRightClickMenu} alt="subtitleRightClickMenu.gif" width="600" height="313" />
+
+<WebStore />

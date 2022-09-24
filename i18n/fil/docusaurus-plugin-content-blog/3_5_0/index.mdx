@@ -1,0 +1,47 @@
+---
+authors: ouweiya
+date: 2021-08-24
+---
+
+import WebStore from '/src/components/WebStore';
+import Tip from '/src/components/Tip';
+import light from './light.png';
+import dark from './dark.png';
+import tip from './tip.gif';
+import singlebutton from './singlebutton.png';
+import single from './single.png';
+import translationError from './translationError.gif';
+
+# YouTube™ Dual Caption 3.5.0 Update Notes
+
+### Custom na istilo ng font
+
+I-click ang icon ng extension upang i-pop up ang page ng mga setting upang suportahan ang dark mode.
+
+Mga custom na opsyon: font, laki ng font, kulay, kulay ng background, spacing, at pagkakasunud-sunod ng subtitle.
+
+<img src={light} alt="light.png" width="340" height="472" />
+<img src={dark} alt="dark.png" width="340" height="472" />
+
+<Tip>Ang pag-hover sa icon ay magpapakita kung ano ang kinakatawan ng setting.</Tip>
+
+<img src={tip} alt="tip.gif" width="340" height="472" />
+
+### Isang istilo ng subtitle
+
+Pagkatapos lumipat sa single subtitle mode, ang solong subtitle style ay maaaring itakda nang hiwalay.
+
+<img src={singlebutton} alt="singlebutton.png" width="314" height="372" />
+<img src={single} alt="single.png" width="340" height="406" />
+
+### Iba pang mga pag-optimize
+
+Alisin ang Chinese Traditional to Simplified program library, bawasan ang laki ng program at pahusayin ang performance, dahil opisyal na inayos ng YouTube ang bug na ito.
+
+<Tip>Minsan nawawala ang mga subtitle, karamihan ay dahil sa mga error sa pagsasalin ng YouTube.</Tip>
+
+<img src={translationError} alt="translationError.gif" width="700" height="396" />
+
+Sa hinaharap, ang iba pang mga makina ng pagsasalin ay ipakikilala upang malutas ang problemang ito at mapunan ang hindi tumpak na pagsasalin.
+
+<WebStore />
