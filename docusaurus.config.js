@@ -10,8 +10,9 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'ouweiya',
+  projectName: 'Dual-Caption-Blog',
+  trailingSlash: false,
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['en', 'zh-Hans', 'zh-Hant'/* , 'id', 'de', 'es', 'fr', 'pt', 'ru', 'ja', 'ko', 'tr', 'vi', 'ar', 'th', 'uk', 'hu', 'fil' */],
