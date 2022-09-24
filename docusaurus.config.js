@@ -6,7 +6,7 @@ const config = {
   title: 'YouTube™ Dual Caption',
   // tagline: 'Dinosaurs are cool',
   url: 'https://www.dual-subtitles.com',
-  baseUrl: '/',
+  baseUrl: '/Dual-Caption-Blog/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
