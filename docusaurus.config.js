@@ -15,7 +15,26 @@ const config = {
   trailingSlash: false,
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['en', 'zh-Hans', 'zh-Hant'/* , 'id', 'de', 'es', 'fr', 'pt', 'ru', 'ja', 'ko', 'tr', 'vi', 'ar', 'th', 'uk', 'hu', 'fil' */],
+    locales: [
+      'en',
+      'zh-Hans',
+      'zh-Hant',
+      'id',
+      'de',
+      'es',
+      'fr',
+      'pt',
+      'ru',
+      'ja',
+      'ko',
+      'tr',
+      'vi',
+      'ar',
+      'th',
+      'uk',
+      'hu',
+      'fil',
+    ],
     localeConfigs: {
       en: {
         label: 'English',

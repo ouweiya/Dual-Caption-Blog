@@ -29,5 +29,5 @@ BlogSidebar
 
  -->
 
-https://ouweiya.github.io/Dual-Caption-Blog
+<!-- https://ouweiya.github.io/Dual-Caption-Blog -->
 
