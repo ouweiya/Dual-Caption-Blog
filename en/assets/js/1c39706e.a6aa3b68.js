@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktwo=self.webpackChunktwo||[]).push([[528],{1510:e=>{e.exports=JSON.parse('{"permalink":"/Dual-Caption-Blog/en/","page":1,"postsPerPage":5,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
