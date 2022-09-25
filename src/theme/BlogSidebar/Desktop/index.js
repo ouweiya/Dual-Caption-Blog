@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import { translate } from '@docusaurus/Translate';
 import styles from './styles.module.css';
 export default function BlogSidebarDesktop({ sidebar }) {
-  console.log('sidebar', sidebar);
+  // console.log('sidebar', sidebar);
   return (
     <aside className="col col--3">
       <nav
@@ -23,7 +23,8 @@ export default function BlogSidebarDesktop({ sidebar }) {
                 to={item.permalink}
                 className={styles.sidebarItemLink}
                 activeClassName={styles.sidebarItemLinkActive}>
-                {item.permalink.split('/').at(-1).replace(/_/g, '.')}
+                {/* {item.permalink.split('/').at(-1).replace(/_/g, '.')} */}
+                {item.title}
               </Link>
             </li>
           ))}

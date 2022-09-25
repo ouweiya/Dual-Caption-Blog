@@ -202,7 +202,11 @@ html {
 
 .container h1 {
   font-size: 32px;
-  /* font-weight: 500; */
+}
+
+.container main article header h2 a {
+  font-size: 32px;
+  color: #333;
 }
 
 h1,
@@ -226,6 +230,10 @@ h6 {
 
 /* 黑暗模式 */
 @media (prefers-color-scheme: dark) {
+  .container main article header h2 a {
+    color: #e3e3e3e5;
+  }
+
   .menu__link {
     color: #e3e3e3e5;
   }

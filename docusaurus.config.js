@@ -14,7 +14,7 @@ const config = {
   projectName: 'Dual-Caption-Blog',
   trailingSlash: false,
   i18n: {
-    defaultLocale: 'zh-Hans',
+    defaultLocale: 'en',
     locales: [
       'en',
       'zh-Hans',
@@ -140,7 +140,6 @@ const config = {
           alt: 'Logo',
           src: 'img/logo.svg',
           srcDark: 'img/logoDark.svg',
-
           className: 'logoImg',
           // height: 26,
         },
