@@ -224,12 +224,24 @@ h6 {
   margin-bottom: 4px;
 }
 
-/* .sidebarTitle2 {
-  font-weight: 500 !important;
-} */
+.githubLink {
+  color: hsla(0, 0%, 0%, 0.8);
+  transition: color 100ms;
+  display: flex;
+}
+.githubLink:hover {
+  color: #000;
+}
 
 /* 黑暗模式 */
 @media (prefers-color-scheme: dark) {
+  .githubLink {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .githubLink:hover {
+    color: #fff;
+  }
+
   .container main article header h2 a {
     color: #e3e3e3e5;
   }
