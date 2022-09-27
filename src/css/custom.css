@@ -140,6 +140,13 @@ html {
 #post-content {
   margin-bottom: 120px;
 }
+.container .markdown h3 a {
+  color: #ccc;
+  transition: color 200ms;
+}
+.container .markdown h3 a:hover {
+  color: #333;
+}
 
 /* 页面目录导航 */
 .table-of-contents__link:hover,
@@ -311,6 +318,10 @@ h6 {
 /* webStore */
 #webStore {
   margin: 40px 0;
+  display: flex;
+  gap: 16px;
+  /* column-gap: 16px; */
+  flex-wrap: wrap;
 }
 
 #webStore .mt-4 {
